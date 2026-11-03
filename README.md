@@ -1,58 +1,105 @@
-Penguin Species Classification Using Machine Learning
-Project Overview
+# Penguin Species Classification Using Machine Learning
 
-This project uses Machine Learning to classify penguins into three species: Adelie, Chinstrap, and Gentoo.
+## Project Overview
 
-The K-Nearest Neighbors (KNN) algorithm is used to predict the species based on physical measurements.
+This project uses Machine Learning algorithms to classify penguins into three different species: Adelie, Chinstrap, and Gentoo.
 
-Objectives
-To understand and analyze the Palmer Penguins dataset.
-To perform data cleaning and preprocessing.
-To implement the KNN classification algorithm.
-To evaluate model performance.
-Dataset
+Two classification algorithms, K-Nearest Neighbors (KNN) and Decision Tree, are implemented and compared based on their performance.
 
-Dataset: Palmer Penguins Dataset
+## Objectives
 
-Source: https://github.com/allisonhorst/palmerpenguins
+* Understand and preprocess the Palmer Penguins dataset.
+* Perform data cleaning and visualization.
+* Implement KNN and Decision Tree algorithms.
+* Evaluate model performance using accuracy, classification reports, and confusion matrices.
+* Compare both machine learning algorithms.
 
-Features:
+## Dataset
 
-Bill Length
-Bill Depth
-Flipper Length
-Body Mass
+**Dataset:** Palmer Penguins Dataset
 
-Target:
+**Source:** https://github.com/allisonhorst/palmerpenguins
 
-Penguin Species
-Technologies Used
-Python
-Jupyter Notebook
-Pandas
-Matplotlib
-Seaborn
-Scikit-learn
-Algorithm
+### Features Used
 
-K-Nearest Neighbors (KNN)
+* Bill Length (mm)
+* Bill Depth (mm)
+* Flipper Length (mm)
+* Body Mass (g)
 
- Results
+### Target Variable
 
-| Evaluation              | Accuracy |
-| ----------------------- | -------: |
-| Train-Test Split        |     100% |
-| 5-Fold Cross Validation |   98.83% |
+* Adelie
+* Chinstrap
+* Gentoo
 
- Project Files
+## Technologies Used
 
-* Penguin_Species_Classification.ipynb – Python source code and implementation.
-* README.md – Project documentation.
+* Python
+* Jupyter Notebook
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
 
- Team Members
+## Methodology
 
-Add all three group members' names here.
+1. Dataset Collection
+2. Data Understanding
+3. Data Cleaning
+4. Data Visualization
+5. Train-Test Splitting
+6. Feature Scaling for KNN
+7. Model Training
+8. Model Evaluation
+9. Cross Validation
+10. Model Comparison
 
- Conclusion
+## Machine Learning Algorithms
 
-The KNN algorithm successfully classified the three penguin species using their physical measurements. The model achieved 100% accuracy on the selected test split and 98.83% average accuracy through 5-fold cross-validation.
+### 1. K-Nearest Neighbors (KNN)
+
+KNN classifies a penguin based on the nearest data points.
+
+* Test Accuracy: 100%
+* 5-Fold Cross Validation Accuracy: 98.83%
+
+### 2. Decision Tree
+
+Decision Tree classifies penguins using decision rules based on their features.
+
+* Test Accuracy: 100%
+* 5-Fold Cross Validation Accuracy: 96.78%
+
+## Model Comparison
+
+| Evaluation Metric         |    KNN | Decision Tree |
+| ------------------------- | -----: | ------------: |
+| Test Accuracy             |   100% |          100% |
+| Cross Validation Accuracy | 98.83% |        96.78% |
+
+Both models achieved 100% accuracy on the test dataset. KNN achieved higher average cross-validation accuracy.
+
+## Project Files
+
+* `Penguin_Species_Classification.ipynb` – Complete implementation.
+* `Confusion_Matrix.png` – KNN confusion matrix.
+* `Decision_Tree_Confusion_Matrix.png` – Decision Tree confusion matrix.
+* `README.md` – Project documentation.
+
+## Team Members
+
+1. Aryan Prajapati – KU2000017013
+2. Kalp Prajapati – KU2000016633
+3. Rudra Patel – KU2000016663
+
+## Institution
+
+Karnavati University
+Department of Computer Science Engineering
+Specialization: Cyber Security
+
+## Conclusion
+
+Both KNN and Decision Tree successfully classified all 69 test samples. KNN achieved 98.83% average cross-validation accuracy, while Decision Tree achieved 96.78%. Based on cross-validation performance, KNN showed slightly better consistency on this dataset.
